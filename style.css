@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Ubuntu:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Ubuntu', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(30, 38%, 92%);
+
+}
+
+.container {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo {
+    width: 320px;
+    height: 500px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.left-container {
+    /* flex: 1; */
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.right-container {
+    /* flex: 1; */
+    width: 320px;
+    padding: 28px 24px;
+    background-color: white;
+    height: 500px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+h5 {
+    letter-spacing: 5px;
+    color: gray;
+    flex: 0.5;
+    font-weight: lighter;
+}
+
+.perfume-name {
+    flex: 1.6;
+    width: 210px;
+    font-weight: 700;
+}
+
+.description {
+    flex: 1.4;
+    color: gray;
+    font-weight: 600;
+    line-height: 26px;
+}
+
+.price {
+    flex: 1;
+    display: flex;
+    align-items: center;
+
+}
+
+.actual-rate {
+    font-size: 40px;
+    color: hsl(158, 36%, 37%);
+    font-weight: 700;
+}
+
+.mrp {
+    margin-left: 20px;
+    font-weight: 600;
+    color: gray;
+}
+
+.btn {
+    background-color: hsl(158, 36%, 37%);
+    flex: 0.7;
+    color: white;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+.btn:hover {
+    background-color: hsl(158, 71%, 14%);
+}
+
+
+@media (max-width:768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .logo {
+        height: 300px;
+        width: 400px;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 0px;
+
+    }
+
+    .right-container {
+        height: 400px;
+        width: 400px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 8px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 8px;
+    }
+
+    .perfume-name {
+        width: 300px;
+    }
+
+    .description {
+        flex: 1.4;
+        color: gray;
+        font-weight: 600;
+        line-height: 24px;
+        margin-top: 6px;
+    }
+
+    .price {
+        margin: 20px 0px;
+    }
+
+    .btn {
+        flex: 0.9;
+    }
+}
