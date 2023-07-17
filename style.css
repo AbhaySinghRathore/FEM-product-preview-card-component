@@ -28,7 +28,7 @@ body {
     justify-content: center;
     align-items: center;
     margin: 10px;
-    height: auto;
+    /* height: auto; */
     max-width: 40rem;
 
 }
