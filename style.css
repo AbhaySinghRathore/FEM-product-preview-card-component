@@ -126,7 +126,7 @@ h5 {
 @media (max-width:768px) {
     .container {
         flex-direction: column;
-        height: auto;
+        /* height: auto; */
         max-width: 24rem;
     }
 
